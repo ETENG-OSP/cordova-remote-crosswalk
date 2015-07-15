@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.eteng.nhw360edemo" version="0.0.24">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.eteng.nhw360" version="0.0.24">
   <name>农惠网</name>
   <description>
     中国农资旗下电商
@@ -36,6 +36,7 @@
     <preference name="ErrorUrl" value="file:///android_asset/www/no-connection.html" />
   </platform>
   <platform name="ios">
+    <hook type="before_build" src="scripts/localization-fix.js" ></hook>
     <allow-intent href="itms:*"/>
     <allow-intent href="itms-apps:*"/>
     <allow-intent href="itms-services:*"/>
