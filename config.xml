@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.eteng.nhw360" version="0.0.24">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.eteng.nhw360" version="0.0.25">
   <name>农惠网</name>
   <description>
     中国农资旗下电商
@@ -33,10 +33,10 @@
     <splash src="www/img/screen/android/default.png" density="mdpi"/>
     <splash src="www/img/screen/android/default.png" density="xhdpi"/>
 
-    <preference name="ErrorUrl" value="file:///android_asset/www/no-connection.html" />
+    <preference name="ErrorUrl" value="file:///android_asset/www/no-connection.html"/>
   </platform>
   <platform name="ios">
-    <hook type="before_build" src="scripts/localization-fix.js" ></hook>
+    <hook type="before_build" src="scripts/localization-fix.js"/>
     <allow-intent href="itms:*"/>
     <allow-intent href="itms-apps:*"/>
     <allow-intent href="itms-services:*"/>
