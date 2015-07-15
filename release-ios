@@ -15,4 +15,4 @@ xcrun \
 
 # sign & provision
 sigh resign "/Users/eteng/nhw360-enterprise.ipa" \
-  -p "nhw360_distribution_appstore.mobileprovision"
+  -p "signatures/nhw360_distribution_appstore.mobileprovision"
