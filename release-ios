@@ -1,5 +1,7 @@
 #!/bin/bash
 
+OUTPUT_PATH="/Users/eteng/nhw360.ipa"
+
 # compile js
 ./pack
 # gulp bump --patch
@@ -11,8 +13,8 @@ cordova build ios --device --release
 xcrun \
   -sdk iphoneos PackageApplication \
   -v "platforms/ios/build/device/农惠网.app" \
-  -o "/Users/eteng/nhw360-enterprise.ipa"
+  -o $OUTPUT_PATH
 
 # sign & provision
-sigh resign "/Users/eteng/nhw360-enterprise.ipa" \
+sigh resign $OUTPUT_PATH \
   -p "signatures/nhw360_distribution_appstore.mobileprovision"
